@@ -1,0 +1,86 @@
+.start-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  margin-top: -80px;
+}
+
+.start-menu {
+  color: #D1CCE3;
+  font-family: 'Fredoka', sans-serif;
+  border-radius: 12px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.start-menu-content {
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.menu-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.btn {
+  padding: 8px;
+  border-radius: 6px;
+  background-color: transparent;
+  color: #D1CCE3;
+  border: 1px solid #D1CCE3;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn.active {
+  background-color: #D1CCE3;
+  color: black;
+}
+
+.start-button-container {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.start-btn {
+  width: 100%;
+  background-color: #EF5262;
+  border: none;
+}
+
+@media (min-width: 768px) {
+  .start-menu-content {
+    padding: 40px 32px;
+    gap: 32px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .start-button-container {
+    margin-top: 32px;
+  }
+}
