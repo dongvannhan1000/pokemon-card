@@ -1,10 +1,14 @@
-const Header = () => {
-  return (
-    <Header>
-      <h1>Pokemon Memory Game</h1>
-      <p>Click on each Pokemon once. Do not click the same Pokemon twice!</p>
-    </Header>
-  );
-};
+import '../styles/Header.css';
 
-export default Header;
+export default function Header({score}) {
+    return (
+        <div className="header">
+            <div className="score-container">
+                <h4 className="score-text">
+                    <span>Score:</span> 
+                    <span>{score}</span>
+                </h4>
+            </div>
+        </div>
+    )
+}
