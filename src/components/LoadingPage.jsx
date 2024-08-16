@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import '../styles/LoadingPage';
+import '../styles/LoadingPage.css';
 
 export default function LoadingPage({isLoading, setGameLoad, pokemonList, setPokemonArray, difficulty}) {
   const [dots, setDots] = useState(1);
