@@ -1,0 +1,43 @@
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loading-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 20px;
+  font-family: 'Fredoka', sans-serif;
+  color: #D1CCE3;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  max-width: 180px;
+  height: 180px;
+}
+
+.loading-text {
+  position: absolute;
+  bottom: 12px;
+  font-size: 20px;
+  font-weight: 600;
+  width: 96px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .loading-content {
+    max-width: 250px;
+    height: 250px;
+  }
+
+  .loading-text {
+    bottom: 32px;
+    font-size: 24px;
+    width: 112px;
+  }
+}
