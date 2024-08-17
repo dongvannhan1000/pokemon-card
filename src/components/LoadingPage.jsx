@@ -22,9 +22,9 @@ export default function LoadingPage({isLoading, setGameLoad, pokemonList, setPok
     const fetchPokemonData = async () => {
       let numArray = new Set();
       let pokemonTmp = []; 
-      const maxLength = difficulty === "Easy" ? 6 : difficulty === "Medium" ? 9 : 15;
+      const maxLength = difficulty === "Easy" ? 9 : difficulty === "Medium" ? 15 : 21;
       while (numArray.size < maxLength) {
-        const randNum = Math.floor(Math.random() * pokemonList.length);
+        const randNum = Math.floor(Math.random() * pokemonList.length) + 1;
         numArray.add(randNum);
       }
       for (let num of numArray) {
@@ -62,7 +62,7 @@ export default function LoadingPage({isLoading, setGameLoad, pokemonList, setPok
   return (
     <div className="loading-container">
       <div className="loading-content">
-        <h4 className="loading-text">Loading {dotString}</h4>
+        <h4 className="loading-text">Loading{dotString}</h4>
       </div>
     </div>
   );

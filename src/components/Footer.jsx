@@ -5,7 +5,11 @@ export default function Footer() {
         <div className="footer">
             <span className="author">Nhan Dong</span> 
             <a href="https://github.com/dongvannhan1000" className="github-link">
-                &#xe100; {/* This is a placeholder. Use an appropriate GitHub icon Unicode */}
+                <img 
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" 
+                    alt="GitHub"
+                    className="github-icon"
+                />
             </a>
             <span className="year">{new Date().getFullYear()}</span>
         </div>

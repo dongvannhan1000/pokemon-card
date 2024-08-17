@@ -1,11 +1,12 @@
 .game-page {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: 100vh;
+  justify-content: space-between;
+  height: 90vh;
   padding: 8px 16px;
   gap: 28px;
   align-items: center;
+  
 }
 
 .header-container {
@@ -14,11 +15,27 @@
 }
 
 .card-grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   justify-content: center;
-  gap: 8px;
+  gap: 20px;
+  align-items: center;
+  margin: 0 auto;
   animation: fadeInScale 0.7s ease-out 0.7s both;
+}
+
+.grid-3x3 {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.grid-3x5 {
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.grid-3x7 {
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 }
 
 .score-container {
@@ -103,11 +120,7 @@
       padding: 12px 40px;
       gap: 56px;
   }
-  .card-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-  }
+
   .score-container {
       margin-top: -20px;
   }

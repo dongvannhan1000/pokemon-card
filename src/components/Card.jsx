@@ -14,7 +14,7 @@ export default function Card({pokemon, handleClick, isFlipped}) {
                         <img src={pokemon.images.other['official-artwork'].front_default} alt={pokemon.name} />
                     </div>
                     <div className="pokemon-info">
-                        <h5>{capitalize(pokemon.name)}</h5>
+                        <div className="pokemon-name">{capitalize(pokemon.name)}</div>
                         <div className="pokemon-types">
                             {types.map(type => (
                                 <span key={type} className={`type-label ${type}`}>{capitalize(type)}</span>

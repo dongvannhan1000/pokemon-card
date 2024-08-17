@@ -53,12 +53,16 @@ export default function GamePage({pokemonArray, shuffleCards, setGameLoad, setIs
       setIsLoading(false);
   }
 
+  const gridClass = pokemonArray.length === 9 ? 'grid-3x3' :
+                      pokemonArray.length === 15 ? 'grid-3x5' :
+                      pokemonArray.length === 21 ? 'grid-3x7' : '';
+
   return (
     <div className="game-page">
         <div className="header-container">
             <Header score={score}/>
         </div>
-        <div className="card-grid">
+        <div className={`card-grid ${gridClass}`}>
             {pokemonArray.map(pokemon => (
                 <Card 
                     key={pokemon.id}
