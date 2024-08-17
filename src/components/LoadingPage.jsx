@@ -22,14 +22,14 @@ export default function LoadingPage({isLoading, setGameLoad, pokemonList, setPok
     const fetchPokemonData = async () => {
       let numArray = new Set();
       let pokemonTmp = []; 
-      const maxLength = difficulty === "Easy" ? 6 : difficulty === "Medium" ? 9 : 16;
+      const maxLength = difficulty === "Easy" ? 6 : difficulty === "Medium" ? 9 : 15;
       while (numArray.size < maxLength) {
         const randNum = Math.floor(Math.random() * pokemonList.length);
         numArray.add(randNum);
       }
       for (let num of numArray) {
         try {
-          const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonList[num]}`);
+          const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${num}`);
           const data = await response.json();
           pokemonTmp.push({
             id: data.id,

@@ -19,6 +19,9 @@ export default function StartPage({handleGen, generation, handleDifficulty, diff
                 <button value="4" onClick={handleGen} className={`btn ${generation === "4" ? 'active' : ''}`}>Sinnoh</button>
                 <button value="5" onClick={handleGen} className={`btn ${generation === "5" ? 'active' : ''}`}>Unova</button>
                 <button value="6" onClick={handleGen} className={`btn ${generation === "6" ? 'active' : ''}`}>Kalos</button>
+                <button value="7" onClick={handleGen} className={`btn ${generation === "7" ? 'active' : ''}`}>Alola</button>
+                <button value="8" onClick={handleGen} className={`btn ${generation === "8" ? 'active' : ''}`}>Galar</button>
+                <button value="9" onClick={handleGen} className={`btn ${generation === "9" ? 'active' : ''}`}>Paldea</button>
               </div>
             </div>
             <div className="menu-section">
