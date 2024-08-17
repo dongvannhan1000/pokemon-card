@@ -58,7 +58,7 @@ function App() {
   }
 
   return (
-    <>
+    <div className="game-container">
     {!isLoading 
     ? <StartPage 
         handleGen={handleGen} 
@@ -82,7 +82,7 @@ function App() {
     )
    }
    <Footer />
-    </>
+    </div>
   )
 }
 

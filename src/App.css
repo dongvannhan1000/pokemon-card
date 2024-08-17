@@ -1,7 +1,9 @@
 #root {
-  margin: 0 auto;
+  overflow: hidden;
+}
+
+.game-container {
+  min-height: 100vh;
   display: flex;
-  padding: 2rem;
-  text-align: center;
-  justify-items: center;
+  flex-direction: column;
 }
